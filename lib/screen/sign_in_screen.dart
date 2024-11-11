@@ -39,7 +39,7 @@ class _SignInScreenState extends State<SignInScreen> {
                 // TODO : 5. Pasang TextFromField Nama Pengguna
                 TextFormField(
                   controller: _usernameController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Nama Pengguna",
                     border: OutlineInputBorder(),
                   ),
