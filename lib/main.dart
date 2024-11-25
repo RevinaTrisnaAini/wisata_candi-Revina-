@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
       // home: const SignInScreen(),
       // home: const SearchScreen(),
       // home: const HomeScreen(),
-      // home: const SignUpScreen(),
+      //home: const SignUpScreen(),
     );
   }
 }

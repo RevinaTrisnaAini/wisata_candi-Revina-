@@ -15,10 +15,10 @@ class _SignInScreenState extends State<SignInScreen> {
   final TextEditingController _passwordCintroller = TextEditingController();
 
   String _errorText ='';
-
   bool _isSignnedIn = false;
-
   bool _obscurePassword = true;
+
+  void _signIn() async {}
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +84,9 @@ class _SignInScreenState extends State<SignInScreen> {
                             fontSize: 16
                           ),
                           recognizer: TapGestureRecognizer()
-                            ..onTap = (){},
+                            ..onTap = (){
+                            Navigator.pushNamed(context, '/signup');
+                            },
                         )
                       ]
                     ))
