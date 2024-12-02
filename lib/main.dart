@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_candi/data/candi_data.dart';
 import 'package:wisata_candi/screen/favorite_screen.dart';
 import 'package:wisata_candi/screen/home_screen.dart';
 import 'package:wisata_candi/screen/profile_screen.dart';
-//import 'package:wisata_candi/screen/home_screen.dart';
 import 'package:wisata_candi/screen/search_screen.dart';
 import 'package:wisata_candi/screen/sign_in_screen.dart';
 import 'package:wisata_candi/screen/sign_up_screen.dart';
-//import 'package:wisata_candi/screen/detail_screen.dart';
-//import 'data/candi_data.dart';
-// import 'package:wisata_candi/data/candi_data.dart';
-// import 'package:wisata_candi/screen/profile_screen.dart';
-//import 'package:wisata_candi/screen/sign_in_screen.dart';
-//import 'package:wisata_candi/screen/sign_up_screen.dart';
+import 'package:wisata_candi/screen/detail_screen.dart';
 
+import 'package:encrypt/encrypt.dart' as encrypt;
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:logger/logger.dart';
 // Fungsi main yang mejalankan Aplikasi
 void main() {
   runApp(const MyApp());
@@ -52,10 +50,10 @@ class MyApp extends StatelessWidget {
       // Pertemuan 10-20
       // home: const ProfileScreen(),
       // home: const DetailScreen(candi: candiList[0]),
-      // home: const SignInScreen(),
+      //home: SignInScreen(),
       // home: const SearchScreen(),
       // home: const HomeScreen(),
-      //home: const SignUpScreen(),
+      //home: SignUpScreen(),
     );
   }
 }
